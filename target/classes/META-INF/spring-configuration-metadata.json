@@ -1,0 +1,16 @@
+{
+  "groups": [],
+  "properties": [
+    {
+      "name": "HTTP.API_KEY",
+      "type": "java.lang.String",
+      "description": "Key."
+    },
+    {
+      "name": "HTTP.HEADER_NAME",
+      "type": "java.lang.String",
+      "description": "Header name."
+    }
+  ],
+  "hints": []
+}
