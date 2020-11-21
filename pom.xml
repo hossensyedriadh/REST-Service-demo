@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>live.syedriadh</groupId>
 	<artifactId>Demo-REST-Service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<name>Demo-REST-Service</name>
 	<description>REST Service for testing</description>
 
