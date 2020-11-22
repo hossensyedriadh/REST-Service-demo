@@ -24,6 +24,9 @@ public class Swagger2Configuration {
     @Value("${HTTP.HEADER_NAME}")
     private String header;
 
+    @Value("${HTTP.API_KEY}")
+    private String key;
+
     @Bean
     public Docket swaggerConfiguration() {
         List<SecurityScheme> securitySchemeList = new ArrayList<>();
@@ -42,7 +45,7 @@ public class Swagger2Configuration {
     private ApiInfo apiDetails() {
         return new ApiInfo(
                 "REST Service",
-                "REST Service for testing.\n\nAPI access credentials:\nName: key\nValue: 7WyREC4w5Nq8sk25\nPass as: header",
+                "REST Service for testing.\n\nAPI access credentials:\nName: key\nValue: "+ key +"\nPass as: header",
                 "1.0.0-SNAPSHOT",
                 "Open for all",
                 new springfox.documentation.service.Contact("Syed Riadh Hossen",

@@ -9,5 +9,10 @@
       "name": "HTTP.HEADER_NAME",
       "type": "java.lang.String",
       "description": "Header name."
+    },
+    {
+      "name": "SWAGGER_UI",
+      "type": "java.lang.String",
+      "description": "Swagger UI URL."
     }
   ] }
