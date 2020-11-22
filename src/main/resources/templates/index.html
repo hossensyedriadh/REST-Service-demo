@@ -27,10 +27,14 @@
 			<p><strong>Value: </strong><span th:text="${header_value}"></span></p>
 			<p><strong>Pass as:</strong> header</p>
 			<br>
-			<p><strong>For JSON response and request use header: </strong></p>
-			<p><strong>Name: </strong><span th:text="${accept}"></span>, <strong>Value: </strong><span th:text="${json}"></span></p>
-			<p><strong>For XML response and request use header: </strong></p>
-			<p><strong>Name: </strong><span th:text="${accept}"></span>, <strong>Value: </strong><span th:text="${xml}"></span></p>
+			<div>
+				<p><strong>For JSON response and request use header: </strong></p>
+				<p><strong>Name: </strong><span th:text="${accept}"></span>, <strong>Value: </strong><span th:text="${json}"></span></p>
+			</div>
+			<div>
+				<p><strong>For XML response and request use header: </strong></p>
+				<p><strong>Name: </strong><span th:text="${accept}"></span>, <strong>Value: </strong><span th:text="${xml}"></span></p>
+			</div>
 			<br>
 			<p>Putting ID field in request body is not required</p>
 		</div>
