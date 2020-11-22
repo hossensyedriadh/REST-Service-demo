@@ -2,6 +2,11 @@
   "groups": [],
   "properties": [
     {
+      "name": "HTTP.ACCEPT",
+      "type": "java.lang.String",
+      "description": "Header to set ACCEPT of media-type."
+    },
+    {
       "name": "HTTP.API_KEY",
       "type": "java.lang.String",
       "description": "Key."
@@ -10,6 +15,16 @@
       "name": "HTTP.HEADER_NAME",
       "type": "java.lang.String",
       "description": "Header name."
+    },
+    {
+      "name": "HTTP.MEDIA_JSON",
+      "type": "java.lang.String",
+      "description": "Value of ACCEPT to set response and request as json."
+    },
+    {
+      "name": "HTTP.MEDIA_XML",
+      "type": "java.lang.String",
+      "description": "Value of ACCEPT to set response and request as xml."
     },
     {
       "name": "SWAGGER_UI",

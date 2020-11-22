@@ -19,5 +19,20 @@
       "name": "application_version",
       "type": "java.lang.String",
       "description": "Version of the application."
+    },
+    {
+      "name": "HTTP.ACCEPT",
+      "type": "java.lang.String",
+      "description": "Header to set ACCEPT of media-type."
+    },
+    {
+      "name": "HTTP.MEDIA_JSON",
+      "type": "java.lang.String",
+      "description": "Value of ACCEPT to set response and request as json."
+    },
+    {
+      "name": "HTTP.MEDIA_XML",
+      "type": "java.lang.String",
+      "description": "Value of ACCEPT to set response and request as xml."
     }
   ] }
