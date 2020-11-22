@@ -12,8 +12,7 @@ public interface OrderService {
     List<Order> getOrdersByCustomerId(int customerId);
     List<Order> getOrdersByProductId(int productId);
     List<Order> getOrdersPricedWithin(double min, double max);
-    List<Order> getAllUnpaidOrders();
-    List<Order> getAllPaidOrders();
+    List<Order> getAllOrdersByPaid(Boolean paid);
     List<Order> getOrdersPlacedOn(Date date);
     List<Order> getOrdersPlacedInMonth(int month);
     List<Order> getOrdersPlacedInYear(int year);

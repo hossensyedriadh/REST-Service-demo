@@ -1,6 +1,4 @@
 live\syedriadh\Demo\REST\Service\service\ProductServiceImpl.class
-live\syedriadh\Demo\REST\Service\entity\Customer.class
-live\syedriadh\Demo\REST\Service\service\OrderServiceImpl.class
 live\syedriadh\Demo\REST\Service\controller\CustomerRestController.class
 live\syedriadh\Demo\REST\Service\controller\DefaultController.class
 live\syedriadh\Demo\REST\Service\configuration\ApiSecurityConfig.class
@@ -9,13 +7,15 @@ live\syedriadh\Demo\REST\Service\entity\Product.class
 live\syedriadh\Demo\REST\Service\service\OrderService.class
 META-INF\spring-configuration-metadata.json
 live\syedriadh\Demo\REST\Service\repository\OrderJpaRepository.class
+live\syedriadh\Demo\REST\Service\service\CustomerServiceImpl.class
+live\syedriadh\Demo\REST\Service\service\CustomerService.class
+live\syedriadh\Demo\REST\Service\entity\Customer.class
+live\syedriadh\Demo\REST\Service\service\OrderServiceImpl.class
 live\syedriadh\Demo\REST\Service\configuration\Swagger2Configuration.class
 live\syedriadh\Demo\REST\Service\service\ProductService.class
 live\syedriadh\Demo\REST\Service\repository\CustomerJpaRepository.class
 live\syedriadh\Demo\REST\Service\entity\Order.class
 live\syedriadh\Demo\REST\Service\controller\ProductRestController.class
-live\syedriadh\Demo\REST\Service\service\CustomerServiceImpl.class
 live\syedriadh\Demo\REST\Service\controller\OrderRestController.class
 live\syedriadh\Demo\REST\Service\filter\ApiKeyAuthenticationFilter.class
-live\syedriadh\Demo\REST\Service\service\CustomerService.class
 live\syedriadh\Demo\REST\Service\DemoRestServiceApplication.class

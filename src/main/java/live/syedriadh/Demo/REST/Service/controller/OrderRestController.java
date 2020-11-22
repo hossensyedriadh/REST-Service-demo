@@ -51,16 +51,10 @@ public class OrderRestController {
         return orderService.getOrdersPricedWithin(min, max);
     }
 
-    @GetMapping("/by-unpaid")
-    @ResponseBody
-    public List<Order> getAllUnpaidOrders() {
-        return orderService.getAllUnpaidOrders();
-    }
-
     @GetMapping("/by-paid")
     @ResponseBody
-    public List<Order> getAllPaidOrders() {
-        return orderService.getAllPaidOrders();
+    public List<Order> getAllPaidOrders(@RequestParam("paid") boolean paid) {
+        return orderService.getAllOrdersByPaid(paid);
     }
 
     @GetMapping("/by-placed-on")
