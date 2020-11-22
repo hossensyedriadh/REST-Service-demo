@@ -20,11 +20,23 @@ public class DefaultController {
     @Value("${SWAGGER_UI}")
     private String swaggerUI;
 
+    @Value("${HTTP.ACCEPT}")
+    private String accept;
+
+    @Value("${HTTP.MEDIA_JSON}")
+    private String json;
+
+    @Value("${HTTP.MEDIA_XML}")
+    private String xml;
+
     @RequestMapping("/")
     public ModelAndView redirect(Model model) {
         model.addAttribute("app_version", appVersion);
         model.addAttribute("header_name", headerName);
         model.addAttribute("header_value", headerValue);
+        model.addAttribute("accept", accept);
+        model.addAttribute("json", json);
+        model.addAttribute("xml", xml);
 
         return new ModelAndView("index");
     }
