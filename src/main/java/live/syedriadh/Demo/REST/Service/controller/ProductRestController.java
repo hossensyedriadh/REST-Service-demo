@@ -3,13 +3,15 @@ package live.syedriadh.Demo.REST.Service.controller;
 import live.syedriadh.Demo.REST.Service.entity.Product;
 import live.syedriadh.Demo.REST.Service.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/products")
+@RequestMapping(value = "/api/products", headers = {"Accept=application/json,application/xml"},
+        produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
 public class ProductRestController {
     private final ProductService productService;
 
@@ -24,19 +26,19 @@ public class ProductRestController {
         return productService.getAllProducts();
     }
 
-    @GetMapping("/id")
+    @GetMapping("/by-id")
     @ResponseBody
     public Optional<Product> getProductById(@RequestParam("id") int id) {
         return productService.getProductById(id);
     }
 
-    @GetMapping("/name")
+    @GetMapping("/by-name")
     @ResponseBody
     public Object getProductByName(@RequestParam("name") String name) {
         return productService.getProductByName(name);
     }
 
-    @GetMapping("/type")
+    @GetMapping("/by-type")
     @ResponseBody
     public List<Product> getProductsByType(@RequestParam("type") String type) {
         return productService.getProductsByType(type);

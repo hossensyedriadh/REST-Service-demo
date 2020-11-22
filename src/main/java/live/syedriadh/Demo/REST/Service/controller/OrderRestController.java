@@ -3,6 +3,7 @@ package live.syedriadh.Demo.REST.Service.controller;
 import live.syedriadh.Demo.REST.Service.entity.Order;
 import live.syedriadh.Demo.REST.Service.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.Date;
@@ -10,7 +11,8 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/orders")
+@RequestMapping(value = "/api/orders", headers = {"Accept=application/json,application/xml"},
+        produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
 public class OrderRestController {
     private final OrderService orderService;
 
@@ -25,55 +27,55 @@ public class OrderRestController {
         return orderService.getAllOrders();
     }
 
-    @GetMapping("/order-id")
+    @GetMapping("/by-order-id")
     @ResponseBody
     public Optional<Order> getOrderById(@RequestParam("order-id") int id) {
         return orderService.getOrderById(id);
     }
 
-    @GetMapping("/customer-id")
+    @GetMapping("/by-customer-id")
     @ResponseBody
     public List<Order> getOrdersByCustomerId(@RequestParam("customer-id") int customerId) {
         return orderService.getOrdersByCustomerId(customerId);
     }
 
-    @GetMapping("/product-id")
+    @GetMapping("/by-product-id")
     @ResponseBody
     public List<Order> getOrdersByProductId(@RequestParam("product-id") int productId) {
         return orderService.getOrdersByProductId(productId);
     }
 
-    @GetMapping("/price-range")
+    @GetMapping("/by-price-range")
     @ResponseBody
     public List<Order> getOrdersPricedWithin(@RequestParam("min") double min, @RequestParam("max") double max) {
         return orderService.getOrdersPricedWithin(min, max);
     }
 
-    @GetMapping("/unpaid")
+    @GetMapping("/by-unpaid")
     @ResponseBody
     public List<Order> getAllUnpaidOrders() {
         return orderService.getAllUnpaidOrders();
     }
 
-    @GetMapping("/paid")
+    @GetMapping("/by-paid")
     @ResponseBody
     public List<Order> getAllPaidOrders() {
         return orderService.getAllPaidOrders();
     }
 
-    @GetMapping("/placed-on")
+    @GetMapping("/by-placed-on")
     @ResponseBody
     public List<Order> getOrdersPlacedOn(@RequestParam("date") Date date) {
         return orderService.getOrdersPlacedOn(date);
     }
 
-    @GetMapping("/placed-month")
+    @GetMapping("/by-placed-month")
     @ResponseBody
     public List<Order> getOrdersPlacedInMonth(@RequestParam("month") int month) {
         return orderService.getOrdersPlacedInMonth(month);
     }
 
-    @GetMapping("/placed-year")
+    @GetMapping("/by-placed-year")
     @ResponseBody
     public List<Order> getOrdersPlacedInYear(@RequestParam("year") int year) {
         return orderService.getOrdersPlacedInYear(year);

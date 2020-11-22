@@ -989,6 +989,7 @@ ALL PRIVILEGES|rest_service:null
       <ColNames>product_id</ColNames>
       <RefTableName>products</RefTableName>
       <RefColNames>id</RefColNames>
+      <OnDelete>cascade</OnDelete>
     </foreign-key>
     <column id="303" parent="284" name="id">
       <Position>1</Position>
