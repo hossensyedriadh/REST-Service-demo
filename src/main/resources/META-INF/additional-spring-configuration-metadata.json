@@ -14,5 +14,10 @@
       "name": "SWAGGER_UI",
       "type": "java.lang.String",
       "description": "Swagger UI URL."
+    },
+    {
+      "name": "application_version",
+      "type": "java.lang.String",
+      "description": "Version of the application."
     }
   ] }

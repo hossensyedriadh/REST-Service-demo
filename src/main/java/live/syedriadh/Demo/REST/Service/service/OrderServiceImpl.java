@@ -101,30 +101,14 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public List<Order> getAllUnpaidOrders() {
+    public List<Order> getAllOrdersByPaid(Boolean paid) {
         List<Order> orderList = orderJpaRepository.findAll().stream().sorted(
                 Comparator.comparing(Order::getId)).collect(Collectors.toList());
 
         List<Order> matchedOrders = new ArrayList<>();
 
         for (Order order : orderList) {
-            if (!order.getPaid()) {
-                matchedOrders.add(order);
-            }
-        }
-
-        return matchedOrders;
-    }
-
-    @Override
-    public List<Order> getAllPaidOrders() {
-        List<Order> orderList = orderJpaRepository.findAll().stream().sorted(
-                Comparator.comparing(Order::getId)).collect(Collectors.toList());
-
-        List<Order> matchedOrders = new ArrayList<>();
-
-        for (Order order : orderList) {
-            if (order.getPaid()) {
+            if (order.getPaid() == paid) {
                 matchedOrders.add(order);
             }
         }
