@@ -1,23 +1,17 @@
 package live.syedriadh.Demo.REST.Service.entity;
 
-import lombok.*;
-
 import javax.persistence.*;
 import javax.validation.constraints.Pattern;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 
-@NoArgsConstructor
-@Getter
-@Setter
 @Entity
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 @Table(name = "customers")
 public final class Customer {
     @Id
-    @Setter(AccessLevel.NONE)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", updatable = false)
     private int id;
@@ -38,4 +32,43 @@ public final class Customer {
             "whitespaces, colon (:), comma (,) and semi-colon (;) allowed")
     @Column(name = "address", nullable = false)
     private String address;
+
+    public Customer() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 }

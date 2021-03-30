@@ -1,23 +1,17 @@
 package live.syedriadh.Demo.REST.Service.entity;
 
-import lombok.*;
-
 import javax.persistence.*;
 import javax.validation.constraints.Pattern;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 
-@NoArgsConstructor
-@Getter
-@Setter
 @Entity
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 @Table(name = "products")
 public final class Product {
     @Id
-    @Setter(AccessLevel.NONE)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", updatable = false)
     private int id;
@@ -37,4 +31,43 @@ public final class Product {
 
     @Column(name = "price_per_unit", nullable = false)
     private Double pricePerUnit;
+
+    public Product() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+
+    public String getProductType() {
+        return productType;
+    }
+
+    public void setProductType(String productType) {
+        this.productType = productType;
+    }
+
+    public Integer getStock() {
+        return stock;
+    }
+
+    public void setStock(Integer stock) {
+        this.stock = stock;
+    }
+
+    public Double getPricePerUnit() {
+        return pricePerUnit;
+    }
+
+    public void setPricePerUnit(Double pricePerUnit) {
+        this.pricePerUnit = pricePerUnit;
+    }
 }
