@@ -5,17 +5,25 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.4.0</version>
+		<version>2.4.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>live.syedriadh</groupId>
 	<artifactId>Demo-REST-Service</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.2-SNAPSHOT</version>
 	<name>Demo-REST-Service</name>
 	<description>REST Service for testing</description>
 
+	<developers>
+		<developer>
+			<name>Syed Riadh Hossen</name>
+			<email>hossensyedriadh@gmail.com</email>
+			<url>https://github.com/hossensyedriadh</url>
+		</developer>
+	</developers>
+
 	<properties>
-		<java.version>15</java.version>
+		<java.version>16</java.version>
 		<springfox.version>3.0.0</springfox.version>
 		<aspectj.version>1.9.6</aspectj.version>
 	</properties>
@@ -75,18 +83,8 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.batch</groupId>
-			<artifactId>spring-batch-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 		<dependency>

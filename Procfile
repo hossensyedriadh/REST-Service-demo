@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -jar target/Demo-REST-Service-1.0.1-SNAPSHOT.jar
+web: java -Dserver.port=$PORT -jar target/Demo-REST-Service-1.0.2-SNAPSHOT.jar

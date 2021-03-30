@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Demo-REST-Service" target="15" />
+      <module name="Demo-REST-Service" target="16" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

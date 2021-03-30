@@ -40,6 +40,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="docker-desktop" />
+    <option name="namespace" value="default" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -71,15 +75,20 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../CPT/Dev/REST-Service" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
@@ -105,7 +114,10 @@
       <workItem from="1605989185943" duration="16695000" />
       <workItem from="1606043465270" duration="13713000" />
       <workItem from="1606083055636" duration="2190000" />
-      <workItem from="1606134187352" duration="2505000" />
+      <workItem from="1606134187352" duration="4290000" />
+      <workItem from="1606146514614" duration="1885000" />
+      <workItem from="1606164791196" duration="1296000" />
+      <workItem from="1617130593858" duration="777000" />
     </task>
     <servers />
   </component>
@@ -123,69 +135,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="859" y="411" width="381" height="217" key="#Assign_Data_Sources" timestamp="1606136406799">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="859" y="411" width="470" height="217" key="#Assign_Data_Sources/-1366.148.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1606006013863" />
-    <state x="859" y="411" width="381" height="217" key="#Assign_Data_Sources/0.0.1920.1040@0.0.1920.1040" timestamp="1606136406799" />
-    <state x="606" y="152" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606136379513">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="606" y="152" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.148.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1606005918264" />
-    <state x="606" y="152" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606136379513" />
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1606047179053">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/-1366.148.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1606047179053" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605989240734">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/-1366.148.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1605989240734" />
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1606136461697">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="324" key="GridCell.Tab.0.bottom/-1366.148.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1606065789391" />
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606136461697" />
-    <state width="1293" height="282" key="GridCell.Tab.0.center" timestamp="1606136461697">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="324" key="GridCell.Tab.0.center/-1366.148.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1606065789391" />
-    <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606136461697" />
-    <state width="1293" height="282" key="GridCell.Tab.0.left" timestamp="1606136461697">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="324" key="GridCell.Tab.0.left/-1366.148.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1606065789390" />
-    <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606136461697" />
-    <state width="1293" height="282" key="GridCell.Tab.0.right" timestamp="1606136461697">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="324" key="GridCell.Tab.0.right/-1366.148.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1606065789391" />
-    <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606136461697" />
-    <state width="1877" height="324" key="GridCell.Tab.1.bottom" timestamp="1606135957607">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="324" key="GridCell.Tab.1.bottom/-1366.148.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1606065789391" />
-    <state width="1877" height="324" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606135957607" />
-    <state width="1877" height="324" key="GridCell.Tab.1.center" timestamp="1606135957607">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="324" key="GridCell.Tab.1.center/-1366.148.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1606065789391" />
-    <state width="1877" height="324" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606135957607" />
-    <state width="1877" height="324" key="GridCell.Tab.1.left" timestamp="1606135957607">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="324" key="GridCell.Tab.1.left/-1366.148.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1606065789391" />
-    <state width="1877" height="324" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606135957607" />
-    <state width="1877" height="324" key="GridCell.Tab.1.right" timestamp="1606135957607">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="324" key="GridCell.Tab.1.right/-1366.148.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1606065789391" />
-    <state width="1877" height="324" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606135957607" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605971842468">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1366.148.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1605971842468" />
   </component>
 </project>
